@@ -1,0 +1,55 @@
+{
+	"React Functional Component": {
+		"prefix": "--rf",
+		"body": [
+			"import React from 'react';",
+			"const $1 = () => {",
+			"\treturn (",
+			"\t\t<div></div>",
+			"\t);",
+			"};",
+			"export default $1;"
+		],
+		"description": "React Functional Component"
+	},
+	"Import Destructuring": {
+		"prefix": "--impd",
+		"body": ["import {${2:element}} from '${1:module}';"],
+		"description": "Import Destructuring"
+	},
+	"useState": {
+		"prefix": "--uses",
+		"body": ["const [$1,set${1/(.*)/${1:/capitalize}/}] = useState($2);"],
+		"description": "useState"
+	},
+	"console.log": {
+		"prefix": "--conlo",
+		"body": ["console.log(`$1`)"],
+		"description": "console.log"
+	},
+	"console.info": {
+		"prefix": "--conin",
+		"body": ["console.info(`$1`)"],
+		"description": "console.info"
+	},
+	"console.warn": {
+		"prefix": "--conwar",
+		"body": ["console.warn(`$1`)"],
+		"description": "console.warn"
+	},
+	"console.error": {
+		"prefix": "--conerr",
+		"body": ["console.error(error$1)"],
+		"description": "console.error"
+	},
+	"Array.map": {
+		"prefix": ".map",
+		"body": ["$1.map((${2:item}, i) => ${2:item})"],
+		"description": "Array.map"
+	},
+	"Array.forEach": {
+		"prefix": ".forEach",
+		"body": ["$1.forEach((${2:item}, i) => ${2:item})"],
+		"description": "Array.forEach"
+	},
+}
